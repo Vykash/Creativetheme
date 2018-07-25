@@ -7,9 +7,7 @@ $(function(){
     $('.close-icon').on('click',function(){
         $('.navigation-bar').removeClass('navigation-toggle');
     })
-    //svg resposnvie
-    
-    
+    //svg responsive   
     function resizeSvg(genitore,tipo){
         var x = jQuery(window).width();
         var y = jQuery(genitore).height();
