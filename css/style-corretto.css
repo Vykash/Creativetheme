@@ -16,6 +16,9 @@ body{
     color: #fff;
 }
 
+.color_softgrey{
+    color: #a7a7a7;
+}
 
 .bg_pink{
     
@@ -65,6 +68,8 @@ a:hover, a:active{
     top: 75px;
 }
 
+
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -75,9 +80,6 @@ a:hover, a:active{
     margin: 0 auto;
 }
 
-.header-box .container-large{
-    height: 100%;
-}
 
 
 
@@ -166,8 +168,18 @@ a:hover, a:active{
 .item img{
     max-width: 100%;
     box-shadow: 10px 10px 0px #ccc;
+    opacity: 0;
 }
 
+
+.item-bg{
+    position: absolute;
+    bottom: 0;
+    box-shadow: 10px 10px 0px #ccc;
+    max-height: 450px;
+    background-size: cover;
+    background-position: center center;
+}
 .item .rotateWrapper{
     position: relative;
 }
@@ -185,15 +197,88 @@ a:hover, a:active{
     top: auto;
 }
 
-/*FOOTER/*
+/*FOOTER*/
+#main-footer{
+    
+}
 
 
+.footer-triangle{
+    height: 40vh;
+}
+
+.footer-triangle svg polygon{
+    fill: #515151;
+}
+.footer-box{
+    height: 25vh;
+    padding-bottom: 8vh;
+}
 
 
+.footer-box span{
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 17px;
+}
+.footer-cont{
+    text-align: center;
+    position: relative
+}
+.footer-cont h3{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.footer-logo{
+    
+    margin: 0 auto;
+}
 
 
+.social-logos i{
+    color: #a7a7a7;
+    font-size: 22px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.divisor{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.f-small-col{
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    transition: all 0.6s ease-in-out;
+}
+
+.f-small-col .rotate90{
+    
+    bottom: 0px;
+    top: 152px;
+    font-size: 22px;
+    transition: all 0.6s ease-in-out;
+}
+
+.f-small-col i{
+    padding-left: 30px;
+    font-size: 15px;
+}
 
 
-
+.f-small-col .rotate90 .color_white:hover{
+    color: #f33176;
+    transition: all 0.4s ease-in-out;
+}
+.f-small-col:hover{
+    
+    top: -45px;
+    transition: all 0.6s ease-in-out;
+}
 
 

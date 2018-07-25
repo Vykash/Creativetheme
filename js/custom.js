@@ -9,30 +9,41 @@ $(function(){
     })
     //svg resposnvie
     
-    function resizeSvg(){
-    var wW = jQuery(window).width();
-    var cH = jQuery('.header-triangle').height();
-        if( wW > 480){
-            jQuery('.header-triangle svg polygon').attr('points','0,0 '+wW+',0 0,'+cH);
+    
+    function resizeSvg(genitore,tipo){
+        var x = jQuery(window).width();
+        var y = jQuery(genitore).height();
+        if( x > 480){
+            
+            if(tipo == 1){
+               jQuery(genitore+' svg polygon').attr('points','0,0 '+x+',0 0,'+y); 
+            }else if(tipo == 2){
+                jQuery(genitore+' svg polygon').attr('points','0,'+y+' '+x+',0 '+x+','+y);
+            }
         }else{
-            jQuery('.header-triangle svg polygon').attr('points','0,0 '+wW+',0 0,0');
-        }
+            jQuery(genitore+' svg polygon').attr('points','0,0 0,0 0,0');
+        };
         
-    };
-    resizeSvg();
+        
+    }
+    resizeSvg('.header-triangle', 1);
+    resizeSvg('.footer-triangle', 2);
     jQuery(window).on('resize', function(){
-        resizeSvg();
+        resizeSvg('.header-triangle', 1);
+        resizeSvg('.footer-triangle', 2);
     });
     
     /*background items*/
     
     jQuery('.item').each(function(ind){
-        var imgH = jQuery(this).children('.pics-wrapper').children.height();
-        var imgW = jQuery(this).children('.pics-wrapper').children.width();
-        var imgsrc = jQuery(this).children('.pics-wrapper').children.attr('src');
+        var imgH = jQuery(this).children('.pics-wrapper').children().height();
+        var imgW = jQuery(this).children('.pics-wrapper').children().width();
+        var imgsrc = jQuery(this).children('.pics-wrapper').children().attr('src');
+
+        
         jQuery(this).children('.pics-wrapper').append('<div class="item-bg"></div>');
-        jQuery(this).children('.item-bg').css('height', imgH).css('width', imgW).css('background-image', 'url('+imgsrc+')');
         
+        jQuery(this).find('.item-bg').css('height', imgH).css('width', imgW).css('background-image', 'url('+imgsrc+')');
         
-    })
+    });
 });
