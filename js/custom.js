@@ -1,6 +1,6 @@
 $(function(){
     
-    $('.btn-container').on('click', function(){
+    $('.menu-toggle').on('click', function(){
         $('.navigation-bar').addClass('navigation-toggle');
     });
     
