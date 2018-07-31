@@ -30,6 +30,10 @@ body{
     
 }
 
+.bg_azure{
+    background-color: #7cd3ce;
+}
+
 .btn{
     color: #515151;
 }
@@ -43,13 +47,12 @@ a{
 }
 a:hover, a:active{
     color: #f33176;
+    transition: all 0.6s ease-in-out;
 }
 
-.underline_pink:hover{
-
-    display: inline-block;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #f33176;
+.copyright a:hover{
+    color: #f33176;
+    transition: all 0.6s ease-in-out;
 }
 
 .rotateWrapper{
@@ -136,7 +139,7 @@ a:hover, a:active{
 }
 
 .center-col-wrapper{
-    padding: 70px 40px;
+    padding: 90px 90px;
 }
 
 .logo{
@@ -308,7 +311,7 @@ a:hover, a:active{
 
 .footer-box span{
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 50px;
     font-size: 17px;
 }
 .footer-cont{
@@ -362,12 +365,22 @@ a:hover, a:active{
 }
 
 .f-small-col .rotate90{
-    top: 185px;
+    top: 210px;
     font-size: 20px;
     margin: 0 auto;
+    transition: all 0.8s ease-in-out;
+}
+.f-small-col .rotate90 div:hover{
+    color: #f33176;;
+}
+.f-small-col .rotate90:hover{
+    top: 160px;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
 }
 
 .f-small-col i{
     font-size: 15px;
     margin-left: 25px;
 }
+
