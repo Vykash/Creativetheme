@@ -1,5 +1,6 @@
 $(function(){
     
+    
     $('.menu-toggle').on('click', function(){
         $('.navigation-bar').addClass('navigation-toggle');
     });
@@ -7,6 +8,10 @@ $(function(){
     $('.close-icon').on('click',function(){
         $('.navigation-bar').removeClass('navigation-toggle');
     })
+    
+    $('.top-btn').on('click', function(){
+        $('body,html').animate({ scrollTop: 0 }, 800);
+    });
     //svg responsive   
     function resizeSvg(genitore,tipo){
         var x = jQuery(window).width();
