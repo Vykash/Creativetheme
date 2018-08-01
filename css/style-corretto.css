@@ -19,7 +19,9 @@ body{
 .color_softgrey{
     color: #a7a7a7;
 }
-
+.bg_blue{
+    background-color: #8ab6fc;
+}
 .bg_pink{
     
     background-color: #f33176;
@@ -392,13 +394,13 @@ PAGINA PORTFOLIO
 
 /*HEADER COLORE DIVERSO*/
 
-#main-header2 h2{
+#portfolio-page h2{
     
     font-size: 68px;
     margin-top: 35px;
 }
 
-.header-box2{
+#portfolio-page .header-box{
     height: 40vh;
     padding-top: 10vh;
 }
@@ -407,41 +409,42 @@ PAGINA PORTFOLIO
     height: 30vh;
 }
 
-#main-header2 .header-triangle svg polygon{
+#portfolio-page .header-triangle svg polygon{
     fill: #7cd3ce;
 }
-.center-col-wrapper2{
+
+#portfolio-page .center-col-wrapper{
     padding: 90px 90px;
 }
-.center-col-wrapper2 h1{
+#portfolio-page .center-col-wrapper h1{
     font-size: 90px;
 }
-.center-col-wrapper2 span{
+#portfolio-page .center-col-wrapper span{
     margin-top: 35px;
     font-size: 22px;
     display: inline-block;
 }
 
-.center-col-wrapper2 span a{
+#portfolio-page .center-col-wrapper span a{
     color: #fff;
 }
-.center-col-wrapper2 span::after{
+#portfolio-page .center-col-wrapper span::after{
     content: "/";
     margin-left: 35px;
     margin-right: 35px;
 }
 
-.center-col-wrapper2 span:last-child::after{
+#portfolio-page .center-col-wrapper span:last-child::after{
     display: none;
 }
-.center-col-wrapper i{
+#portfolio-page .center-col-wrapper i{
     font-size: 15px;
 }
-.center-col-wrapper2 .fa-arrow-left{
+#portfolio-page .center-col-wrapper .fa-arrow-left{
     margin-right: 35px;
 }
 
-.center-col-wrapper2 .fa-arrow-right{
+#portfolio-page .center-col-wrapper .fa-arrow-right{
     margin-left: 35px;
 }
 
@@ -494,7 +497,7 @@ PAGINA PORTFOLIO
 }
 
 .pic-wrapper{
-    width: 90%;
+    width: 90% ;
     
 }
 
@@ -507,13 +510,12 @@ PAGINA PORTFOLIO
 .right-col{
     width: 55%;
     display: inline-block;
-    height: 1000px;
     vertical-align: top;
     margin-left: 20px;
     margin-top: 80px;
 }
 
-.rightTitle{
+.azure-title{
     color: aqua;
 }
 
@@ -526,20 +528,23 @@ PAGINA PORTFOLIO
     margin-bottom: 55px;
 }
 
-.textContainer div{
-    font-size: 25px;
+.textContainer .product-title{
+    font-size: 26px;
     line-height: 30px;
 }
 
-.textContainer p{
-    font-size: 17px;
+.textContainer .product-desc{
+    font-size: 18px;
     line-height: 30px;
 }
 
+.textContainer .product-info{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
 .textContainer span{
-    margin-top: 5px;
     display: block;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .textContainer a{
@@ -548,7 +553,92 @@ PAGINA PORTFOLIO
 
 /*HOVERS*/
 
-.center-col-wrapper2 a:hover{
+#portfolio-page .center-col-wrapper a:hover{
     transition: all 0.6s ease-in-out;
     color: #515151;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------
+SECONDA PAGINA PORTFOLIO
+--------------------------------------------------------------------------------------------------*/
+/*HOVERS*/
+
+#portfolio-page-2 .center-col-wrapper a:hover{
+    transition: all 0.6s ease-in-out;
+    color: #515151;
+}
+
+#portfolio-page-2 h2{
+    
+    font-size: 68px;
+    margin-top: 35px;
+}
+
+#portfolio-page-2 .header-box{
+    height: 40vh;
+    padding-top: 10vh;
+}
+
+.header-triangle{
+    height: 30vh;
+}
+
+#portfolio-page-2 .header-triangle svg polygon{
+    fill: #8ab6fc;
+}
+#portfolio-page-2 .portfolio-container{
+    margin-top: -290px;
+}
+#portfolio-page-2 .center-col-wrapper{
+    padding: 90px 90px;
+}
+#portfolio-page-2 .center-col-wrapper h1{
+    font-size: 90px;
+}
+#portfolio-page-2 .center-col-wrapper span{
+    margin-top: 35px;
+    font-size: 22px;
+    display: inline-block;
+}
+
+#portfolio-page-2 .center-col-wrapper span a{
+    color: #fff;
+}
+#portfolio-page-2 .center-col-wrapper span::after{
+    content: "/";
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#portfolio-page-2 .center-col-wrapper span:last-child::after{
+    display: none;
+}
+#portfolio-page-2 .center-col-wrapper i{
+    font-size: 15px;
+}
+#portfolio-page-2 .center-col-wrapper .fa-arrow-left{
+    margin-right: 35px;
+}
+
+#portfolio-page-2 .center-col-wrapper .fa-arrow-right{
+    margin-left: 35px;
+}
+
+/*CONTENITORE PRINCIPALE*/
+
+#portfolio-page-2 .left-col{
+    width: 55%;
+    margin-top: 80px;
+}
+
+.left-col-wrapper{
+    padding: 250px 95px;
+    margin-right: 50px;
+}
+
+
+#portfolio-page-2 .right-col{
+    width: 40%;
 }
