@@ -755,6 +755,21 @@ SECONDA PAGINA PORTFOLIO
     padding-bottom: 72px;
 }
 
+/*CONTATTI*/
+
+.contatti iframe{
+    margin-top: -390px;
+    position: relative;
+    z-index:-1;
+}
+.contact-triangle{
+    height: 40vh;
+    margin-top: -393px
+}
+.contact-triangle polygon{
+    fill: #fff;
+}
+
 
 
 

@@ -20,8 +20,10 @@ $(function(){
             
             if(tipo == 1){
                jQuery(genitore+' svg polygon').attr('points','0,0 '+x+',0 0,'+y); 
+               jQuery(genitore+' svg polyline').attr('points', x+',0 0,'+y); 
             }else if(tipo == 2){
                 jQuery(genitore+' svg polygon').attr('points','0,'+y+' '+x+',0 '+x+','+y);
+                jQuery(genitore+' svg polyline').attr('points', x+',0 0,'+y); 
             }
         }else{
             jQuery(genitore+' svg polygon').attr('points','0,0 0,0 0,0');
@@ -31,9 +33,11 @@ $(function(){
     }
     resizeSvg('.header-triangle', 1);
     resizeSvg('.footer-triangle', 2);
+    resizeSvg('.contact-triangle', 2);
     jQuery(window).on('resize', function(){
         resizeSvg('.header-triangle', 1);
         resizeSvg('.footer-triangle', 2);
+        resizeSvg('.contact-triangle', 2);
     });
     
     /*background items*/
