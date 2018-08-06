@@ -413,7 +413,7 @@ a:hover, a:active{
 /*FOOTER*/
 
 .footer-triangle{
-    height: 40vh;
+    height: 39.7vh;
 }
 .footer-triangle svg polygon{
     fill: #515151;
@@ -421,6 +421,7 @@ a:hover, a:active{
 .footer-box{
     height: 25vh;
     padding-bottom: 8vh;
+    margin-top: -1px;
 }
 .footer-box span{
     display: inline-block;
@@ -850,12 +851,9 @@ SECONDA PAGINA PORTFOLIO
 .blog-page .center-col-wrapper div{
     display: inline-block;
 }
-.blog-page #portfolio-header .blog-page .center-col-wrapper{
-    padding-top: 72px;
-    padding-bottom: 72px;
-}
+
 .blog-page #portfolio-header .center-col-wrapper{
-    padding: 70px 90px;
+    padding: 55px 90px;
 }
 .blog-container-2-col{
     margin-top: -180px;
@@ -917,12 +915,9 @@ SECONDA PAGINA PORTFOLIO
 .blog-page-2 .center-col-wrapper div{
     display: inline-block;
 }
-.blog-page-2 #portfolio-header .blog-page .center-col-wrapper{
-    padding-top: 72px;
-    padding-bottom: 72px;
-}
+
 .blog-page-2 #portfolio-header .center-col-wrapper{
-    padding: 70px 90px;
+    padding: 50px 90px;
 }
 .blog-container-2-col{
     margin-top: -180px;
@@ -1097,6 +1092,10 @@ SECONDA PAGINA PORTFOLIO
 }
 .contatti .center-col-wrapper div{
     display: inline-block;
+}
+
+.contatti #portfolio-header .center-col-wrapper{
+    padding: 77px 90px;
 }
 .contatti iframe{
     margin-top: -390px;
