@@ -4,51 +4,92 @@ body{
     color: #515151;
     font-family: 'Varela Round', sans-serif;
 }
+img{
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+/*KIT COLORI*/
+
+.bg_pink{
+    
+    background-color: #f33176;
+}
 .color_pink{
     
     color: #f33176;
     
 }
-.color_black{
-    color: #515151;
-}
-.color_white{
-    color: #fff;
-}
 
-
-.color_softgrey{
-    color: #a7a7a7;
-}
-.bg_blue{
-    background-color: #8ab6fc;
-}
-.bg_yellow{
-    background-color: #F0BE43;
-}
-.bg_pink{
-    
-    background-color: #f33176;
-}
 .bg_black{
     
     background-color: #515151;
     
 }
+.color_black{
+    color: #515151;
+}
+
+.bg_cream{
+    background-color: #9CD189
+}
+.color_cream{
+    color: #9CD189
+}
+
+.bg_yellow{
+    background-color: #FBDC2C;
+}
+.color_yellow{
+    color: #FBDC2C;
+}
+
+.bg_red{
+    background-color: #E0534C;
+}
+.color_red{
+    color: #E0534C;
+}
+
 .bg_azure{
     background-color: #7cd3ce;
 }
+.color_azure{
+    color: #7cd3ce;
+}
+
+.bg_blue{
+    background-color: #8ab6fc;
+}
+.color_blue{
+    color: #8ab6fc;
+}
+.bg_green{
+    background-color: #ACDE61;
+}
+
+.color_white{
+    color: #fff;
+}
+.color_softgrey{
+    color: #a7a7a7;
+}
+
 .bg_light-green{
     background-color: #4BE5C3;
 }
 
+/*-----*/
+
+.standard_btn{
+    height: 80px;
+    width: 80px;
+    border: none;
+    box-shadow: 10px 10px 0px #ccc;
+}
 .btn{
     color: #515151;
 }
-.btn:hover{
-    background-color: #f33176;
-}
-
 a{
     color: #515151;
     text-decoration: none;
@@ -57,12 +98,6 @@ a:hover, a:active{
     color: #f33176;
     transition: all 0.6s ease-in-out;
 }
-
-.copyright a:hover{
-    color: #f33176;
-    transition: all 0.6s ease-in-out;
-}
-
 .rotateWrapper{
     position: relative;
     width: 100%;
@@ -79,22 +114,88 @@ a:hover, a:active{
     width: 100%;
     top: 75px;
 }
-
 .container_small{
     width: 1000px;
     margin: 0 auto;
 }
-
 .container{
     width: 1200px;
     margin: 0 auto;
 }
-
 .container_large{
     width: 1440px;
     margin: 0 auto;
 }
 
+
+
+/*HOVERS*/
+
+.menu-toggle:hover{
+    transform: scale(1.3);
+    transition: all 0.6s ease-in-out;
+}
+
+.close-icon:hover{
+    transform: scale(1.7);
+    color: #f33176;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar ul li a:hover{
+    color: #f33176;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.f-small-col .rotate90 div:hover{
+    color: #f33176;;
+}
+
+.f-small-col .rotate90:hover{
+    top: 160px;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio-item:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+#portfolio-header .center-col-wrapper a:hover{
+    transition: all 0.6s ease-in-out;
+    color: #515151;
+}
+
+.blog-link-underline:hover .decorative-underline{
+    width: 0px;
+    transition: all 0.6s ease-in-out;
+}
+.sidebar .blog-link-underline:hover .decorative-underline{
+    width: 0px;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #f33176;
+}
+
+.copyright a:hover{
+    color: #f33176;
+    transition: all 0.6s ease-in-out;
+}
+
+.search-container input:focus{
+    outline: none;
+}
 
 
 
@@ -103,17 +204,25 @@ a:hover, a:active{
     
     font-size: 90px
 }
-
 #main-header h2{
     font-size: 24px;
 }
-
 .titolo-2{
     font-size: 55px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
+.small_font{
+    Font-size: 19px;
+    margin-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.medium_font{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
 .header-box{
     height: 50vh;
     padding-top: 10vh;
@@ -126,40 +235,30 @@ a:hover, a:active{
     height: 40vh;
     
 }
-
 .header-triangle svg polygon{
     fill: #f33176;
 }
-
 .small-col, .center-col{
     display: inline-block;
     height: 100%;
     vertical-align: top;
 }
-
 .small-col{
     width: 50px;
     color: #fff;
 }
-
 .menu-toggle{
     width: 100%;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
 }
-.menu-toggle:hover{
-    transform: scale(1.3);
-    transition: all 0.6s ease-in-out;
-}
 .center-col{
     width: calc(100% - 109px);
 }
-
 .center-col-wrapper{
     padding: 90px 90px;
 }
-
 .logo{
     width: 50px;
     height: 50px;
@@ -170,6 +269,7 @@ a:hover, a:active{
 }
 
 /*Barra di navigazione*/
+
 .navigation-bar {
     height: 100vh;
     width: 24%;
@@ -209,13 +309,6 @@ a:hover, a:active{
     display: inline-block;
     transition: all 0.7s ease-in-out;
 }
-
-.close-icon:hover{
-    transform: scale(1.7);
-    color: #f33176;
-    transition: all 0.7s ease-in-out;
-    cursor: pointer;
-}
 .logo-square.nav-logo{
     display: inline-block;
     text-align: right;
@@ -224,11 +317,9 @@ a:hover, a:active{
     top: 30px;
     left: 15px;
 }
-
 .logo-square.nav-logo p{
     font-size: 30px;
 }
-
 .logo-square.nav-logo span{
     margin-top: 15px;
     font-size: 22px;
@@ -251,12 +342,26 @@ a:hover, a:active{
 .nav-list .navbar a{
     color: #fff;
 }
-.navbar ul li a:hover{
-    color: #f33176;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
+
+.navbar-search-form{
+    text-align: right;
+    width: 100%;
+    margin-top: 25px;
 }
 
+.navbar-search-form input[type="search"]{
+    border: none;
+    background-color: #515151;
+}
+.navbar-search-form input[type="search"]:focus{
+   outline: none;
+}
+
+.navbar-search-form input::placeholder{
+    font-size: 18px;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+}
 
 /**GRIGLIA PORTFOLIO*/
 
@@ -267,7 +372,6 @@ a:hover, a:active{
     margin-bottom: 150px;
     
 }
-
 .item .titleWrapper{
     position: absolute;
     width: 50px;
@@ -276,18 +380,14 @@ a:hover, a:active{
 .item-right{
     margin-left: calc(50% - 40px);
 }
-
 .item-left{
     margin-right: calc(50% - 40px);
 }
-
 .item img{
     max-width: 100%;
     box-shadow: 10px 10px 0px #ccc;
     opacity: 0;
 }
-
-
 .item-bg{
     position: absolute;
     bottom: 0;
@@ -299,25 +399,22 @@ a:hover, a:active{
 .item .rotateWrapper{
     position: relative;
 }
-
 .item-right .titleWrapper{
     right: -65px;
 }
-
 .item-left .titleWrapper{
     left: -65px;
 }
-
 .item .rotate90{
     bottom: 0px;
     top: auto;
 }
 
 /*FOOTER*/
+
 .footer-triangle{
     height: 40vh;
 }
-
 .footer-triangle svg polygon{
     fill: #515151;
 }
@@ -325,8 +422,6 @@ a:hover, a:active{
     height: 25vh;
     padding-bottom: 8vh;
 }
-
-
 .footer-box span{
     display: inline-block;
     margin-top: 50px;
@@ -344,7 +439,6 @@ a:hover, a:active{
     
     margin: 0 auto;
 }
-
 .copyright{
     color: #a7a7a7;
 }
@@ -360,43 +454,33 @@ a:hover, a:active{
 .copyright a:last-of-type:after{
     display: none;
 }
-
+.social-logos{
+    margin-top: 50px;
+    text-align: center;
+}
 .social-logos i{
     color: #a7a7a7;
     font-size: 22px;
-    margin-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
 }
-
 .f-center-col{
     width: 90%;
     display: inline-block;
     height: 100%;
 }
-
 .f-small-col{
     width: 50px;
     height: 238px;
     display: inline-block;
     vertical-align: top;
 }
-
 .f-small-col .rotate90{
     top: 210px;
     font-size: 20px;
     margin: 0 auto;
     transition: all 0.8s ease-in-out;
 }
-.f-small-col .rotate90 div:hover{
-    color: #f33176;;
-}
-.f-small-col .rotate90:hover{
-    top: 160px;
-    transition: all 0.8s ease-in-out;
-    cursor: pointer;
-}
-
 .f-small-col i{
     font-size: 15px;
     margin-left: 25px;
@@ -451,31 +535,6 @@ PAGINA PORTFOLIO
 #portfolio-header .center-col-wrapper .fa-arrow-right{
     margin-left: 35px;
 }
-.azure-title{
-    color: aqua;
-}
-.yellow-title{
-    color: #F0BE43;
-}
-/*HOVERS*/
-
-img{
-    transition: all 0.6s ease-in-out;
-    cursor: pointer;
-}
-.portfolio-item:hover{
-    transform: scale(1.1);
-    transition: all 0.6s ease-in-out;
-}
-.item:hover{
-    transform: scale(1.1);
-    transition: all 0.6s ease-in-out;
-    cursor: pointer;
-}
-#portfolio-header .center-col-wrapper a:hover{
-    transition: all 0.6s ease-in-out;
-    color: #515151;
-}
 
 
 /*CONTENITORE PRINCIPALE*/
@@ -491,15 +550,34 @@ img{
     fill: #8ab6fc;
 }
 .portfolio-page-3 .header-triangle svg polygon{
-    fill: #F0BE43;
+    fill: #FBDC2C;
 }
 .blog-page .header-triangle svg polygon{
     fill: #4BE5C3;
 }
+.blog-page-2 .header-triangle svg polygon{
+    fill: #4BE5C3;
+}
 .team-page .header-triangle svg polygon{
-    fill: #F0BE43;
+    fill: #FBDC2C;
 }
 
+.page-404 .header-triangle svg polygon{
+    fill: #E0534C;
+
+}
+
+.page-404 #main-footer{
+    margin-top: -392px;
+}
+
+.page-404 .center-col-wrapper h1 div{
+    display: inline-block;
+}
+
+.page-404 .center-col-wrapper h2 div{
+    display: inline-block;
+}
 
 
 /*COLONNE PORTFOLIO*/
@@ -520,6 +598,7 @@ img{
     padding: 50px 120px;
     margin-left: 50px;
 }
+
 /*IMMAGINI PORTFOLIO, ALTERNATE*/
 .portfolio-item{
     width: 100%;
@@ -708,7 +787,7 @@ SECONDA PAGINA PORTFOLIO
 .team-page .social-container {
     position: absolute;
     bottom: 15px;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .team-page .social-container i{
     display: block;
@@ -719,10 +798,7 @@ SECONDA PAGINA PORTFOLIO
 .teamContainer{
     margin-bottom: 315px;
 }
-.teamContainer .yellow-title{
-    font-size: 22px;
-}
-.teamContainer .yellow-title::after{
+.teamContainer .team-name::after{
     content: '/';
     margin-left: 15px;
     margin-right: 15px;
@@ -732,6 +808,9 @@ SECONDA PAGINA PORTFOLIO
     font-size: 17px;
     margin-top: 50px;
     line-height: 25px;
+}
+.team-name{
+    font-size: 20px;
 }
 .team-role{
     font-size: 18px;
@@ -744,19 +823,281 @@ SECONDA PAGINA PORTFOLIO
 }
 
 
+
+
+.team-member{
+    width: 100%;
+}
+
+.team-image{
+    width: 40%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.team-image img{
+    max-width: 100%;
+}
+
+.team-desc{
+    width: 49%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
 /*PAGINA BLOG*/
 
 .blog-page .center-col-wrapper div{
     display: inline-block;
 }
-
 .blog-page #portfolio-header .blog-page .center-col-wrapper{
     padding-top: 72px;
     padding-bottom: 72px;
 }
+.blog-page #portfolio-header .center-col-wrapper{
+    padding: 70px 90px;
+}
+.blog-container-2-col{
+    margin-top: -180px;
+}
+.blog-left-col{
+    width: 45%;
+    margin-right: 95px;
+    display: inline-block;
+}
+.blog-right-col{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -100px;
+}
+.blog-post{
+    width: 100%;
+    margin-bottom: 70px;
+}
+.blog-image{
+    margin-bottom: 45px;
+}
+.blog-post img{
+    max-width: 100%;
+    box-shadow: 10px 10px 0px #ccc;
+}
+.blog-post h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.blog-small{
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.post-info,
+.post-content{
+    display: inline-block;
+    vertical-align: top;
+}
+.post-info{
+    width: 30%;
+    font-size: 13px;
+}
+.post-content{
+    width: 69%;
+    line-height: 27px;
+}
+.blog-read-more{
+    margin-top: 25px;
+    display: block;
+    width: 70px;
+}
+
+/*BLOG CON SIDEBAR*/
+
+.blog-page-2 .center-col-wrapper div{
+    display: inline-block;
+}
+.blog-page-2 #portfolio-header .blog-page .center-col-wrapper{
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+.blog-page-2 #portfolio-header .center-col-wrapper{
+    padding: 70px 90px;
+}
+.blog-container-2-col{
+    margin-top: -180px;
+}
+.blog-page-2 .blog-image{
+    height: 560px;
+    background-size: cover;
+    box-shadow: 10px 10px 0px #ccc;
+}
+.blog-image-1{
+    background-image: url(../img/pillola.jpg);
+}
+.blog-image-2{
+    background-image: url(../img/yewllocar.jpg);
+    background-position: center;
+}
+.blog-image-3{
+    background-image: url(../img/ragazza.jpg);
+    background-position: top top;
+}
+.blog-page-2 .blog-left-col{
+    width: 60%;
+}
+
+.sidebar-container{
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sidebarWrapper{
+    padding: 20px 16px;
+}
+
+.search-container{
+    width: 100%;
+    margin-top: 85px;
+    position: relative;
+    margin-bottom: 60px;
+    
+}
+
+.search-container input{
+    
+    width: 100%;
+    height: 45px;
+    background-color: #4BE5C3;
+    border: none;
+    border-radius: 3px;
+    padding: 23px 17px 20px 17px;
+}
+
+.search-container input::placeholder{
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    font-size: 17px;
+    
+}
+.search-icon{
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+
+.search-icon i{
+    color: #fff;
+    font-size: 18px;
+}
+.sidebar-post{
+    margin-bottom: 115px;
+}
+.sidebar-post-content{
+    width: 100%;
+}
+
+.sidebar h4{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #4BE5C3;
+}
+.recent-posts{
+    width: 100%;
+    margin-bottom: 115px;
+}
+.recent-posts h4{
+    margin-bottom: 35px;
+}
+.recent-posts a{
+    font-size: 18px;
+}
+
+.post-preview{
+    margin-bottom: 25px;
+}
+.to-blog-link{
+    margin-top: 40px;
+}
+.to-blog-link a{
+    text-decoration: underline;
+    font-size: 17px;
+}
+.projectsContainer-3-col{
+    width: 100%;
+    font-size: 0;
+    margin-bottom: 115px;
+}
+.p-small-col{
+    width: 32%;
+    display: inline-block;
+    height: 80px;
+}
+
+.p-small-col img{
+    width: 100%;
+    height: 100%;
+}
+
+.projectsContainer-3-col .blog-small{
+    font-size: 17px;
+    text-decoration: underline;
+    margin-top: 20px;
+    display: block;
+}
+.recent-tweets{
+    margin-bottom: 115px;
+}
+.recent-tweets .follow-link a{
+    font-size: 17px;
+    text-decoration: underline;
+    margin-top: 20px;
+    display: block;
+}
+
+.tweet-post{
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.sidebar-social-logos i{
+    font-size: 18px;
+    color: #ccc;
+    margin-right: 15px;
+}
+/*DECORAZIONE UNDERLINE*/ 
+.decorative-underline{
+    display: block;
+    width: 69px;
+    height: 3px;
+    margin-top: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.blog-page-2 .sidebar .decorative-underline{
+    width: 83px;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*CONTATTI*/
-
+.contatti .header-triangle svg polygon{
+    fill: #ACDE61;
+}
+.contatti h2{
+    margin-bottom: 20px;
+}
+.contatti .help{
+    font-size: 19px;
+}
+.contatti .center-col-wrapper div{
+    display: inline-block;
+}
 .contatti iframe{
     margin-top: -390px;
     position: relative;
@@ -769,9 +1110,124 @@ SECONDA PAGINA PORTFOLIO
 .contact-triangle polygon{
     fill: #fff;
 }
+.form-container{
+    margin-top: -430px;
+    width: 1000px;
+}
+.form-container .left-col{
+    width: 40%;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+}
+.form-container .right-col{
+    margin-top: 0px;
+    width: 54%;
+    margin-bottom: 20px;
+}
+.form-container h4{
+    font-size: 35px;
+    padding-bottom: 55px;
+    white-space: nowrap;
+    font-weight: 600;
+    width: 300px;
+    border-bottom: 1px solid black;
+}
+.form-container .right-col form input{
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 300px;
+    background-color: transparent;
+    margin-top: 35px;
+    outline: none;
+}
+.form-container .right-col form label{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.form-container .right-col-wrapper{
+    padding: 50px 120px 0px 120px;
+    margin-left: 0px;
+}
+.form-container .right-col form input[type=submit]{
+    font-size: 16px;
+    text-align: left;
+    font-family: inherit;
+    border: none;
+}
+.form-container .right-col form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 300px;
+    height: 100px;
+    font-family: inherit;
+    margin-top: 10px;
+}
+.form-container .right-col form textarea:focus{
+    outline: none;
+}
+.form-container ::placeholder{
+    font-family: inherit;
+    font-size: 16px;
+}
+.form-container .left-col-wrapper{
+    text-align: right;
+    padding-top: 320px;
+}
+.form-container .left-col-wrapper p{
+    margin-top: 30px;
+    line-height: 25px;
+}
+.form-container .left-col-wrapper i{
+    margin-bottom: 10px;
+    color: #F0BE43;
+    display: block;
+    font-size: 18px;
+}
+.form-container .social-logos i{
+    color: #515151;
+    font-size: 17px;
+}
 
+/*PAGINA RISULTATI RICERCA*/
 
+.search-result .header-box{
+    height: 35vh;
+}
 
+.search-word{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.search-result-left{
+    
+    width: 100%;
+    margin-left: 50px;
+    margin-bottom: 90px;
+}
+.btn-container{
+    width: 80px;
+    display: inline-block;
+}
+.search-desc{
+    display: inline-block;
+    width: 90%;
+    vertical-align: top;
+}
 
-
+.search-wrapper{
+    padding: 20px 50px;
+}
+.standard_btn .small_font{
+    margin-top: 0px;
+    font-size: 35px;
+}
+.search-result-right{
+    width: 100%;
+    margin-bottom: 90px;
+}
