@@ -170,7 +170,8 @@ a:hover, a:active{
     cursor: pointer;
 }
 
-#portfolio-header .center-col-wrapper a:hover{
+
+.single-portfolio #main-header .center-col-wrapper span a:hover{
     transition: all 0.6s ease-in-out;
     color: #515151;
 }
@@ -403,7 +404,7 @@ a:hover, a:active{
     right: -65px;
 }
 .item-left .titleWrapper{
-    left: -65px;
+    left: -55px;
 }
 .item .rotate90{
     bottom: 0px;
@@ -494,46 +495,46 @@ PAGINA PORTFOLIO
 --------------------------------------------------------------------------------------------/*
 *Regole Comuni Portfolio*/
 
-#portfolio-header h1{
+.single-portfolio #main-header h1{
     font-size: 85px;
 }
-#portfolio-header h2{
+.single-portfolio #main-header h2{
     font-size: 55px;
-    margin-top: 35px;
+    margin-top: 20px;
 }
-#portfolio-header .header-box{
+.single-portfolio #main-header .header-box{
     height: 40vh;
     padding-top: 10vh;
 }
-#portfolio-header .header-triangle{
+.single-portfolio #main-header .header-triangle{
     height: 30vh;
 }
-#portfolio-header .center-col-wrapper{
+.single-portfolio #main-header .center-col-wrapper{
     padding: 90px 90px;
 }
-#portfolio-header .center-col-wrapper span{
+.single-portfolio #main-header .center-col-wrapper span{
     margin-top: 35px;
     font-size: 22px;
     display: inline-block;
 }
-#portfolio-header .center-col-wrapper span a{
+.single-portfolio #main-header .center-col-wrapper span a{
     color: #fff;
 }
-#portfolio-header .center-col-wrapper span::after{
+.single-portfolio #main-header .center-col-wrapper span::after{
     content: "/";
     margin-left: 35px;
     margin-right: 35px;
 }
-#portfolio-header .center-col-wrapper span:last-child::after{
+.single-portfolio #main-header .center-col-wrapper span:last-child::after{
     display: none;
 }
-#portfolio-header .center-col-wrapper i{
+.single-portfolio #main-header .center-col-wrapper i{
     font-size: 15px;
 }
-#portfolio-header .center-col-wrapper .fa-arrow-left{
+.single-portfolio #main-header .center-col-wrapper .fa-arrow-left{
     margin-right: 35px;
 }
-#portfolio-header .center-col-wrapper .fa-arrow-right{
+.single-portfolio #main-header .center-col-wrapper .fa-arrow-right{
     margin-left: 35px;
 }
 
@@ -566,6 +567,10 @@ PAGINA PORTFOLIO
 .page-404 .header-triangle svg polygon{
     fill: #E0534C;
 
+}
+
+.page-404 .footer-triangle svg{
+    margin-top: 17px;
 }
 
 .page-404 #main-footer{
@@ -852,7 +857,7 @@ SECONDA PAGINA PORTFOLIO
     display: inline-block;
 }
 
-.blog-page #portfolio-header .center-col-wrapper{
+.blog-page #main-header .center-col-wrapper{
     padding: 55px 90px;
 }
 .blog-container-2-col{
@@ -916,7 +921,7 @@ SECONDA PAGINA PORTFOLIO
     display: inline-block;
 }
 
-.blog-page-2 #portfolio-header .center-col-wrapper{
+.blog-page-2 #main-header .center-col-wrapper{
     padding: 50px 90px;
 }
 .blog-container-2-col{
@@ -1094,7 +1099,7 @@ SECONDA PAGINA PORTFOLIO
     display: inline-block;
 }
 
-.contatti #portfolio-header .center-col-wrapper{
+.contatti #main-header .center-col-wrapper{
     padding: 77px 90px;
 }
 .contatti iframe{
@@ -1104,93 +1109,99 @@ SECONDA PAGINA PORTFOLIO
 }
 .contact-triangle{
     height: 40vh;
-    margin-top: -393px
+    margin-top: -381px
 }
 .contact-triangle polygon{
     fill: #fff;
 }
-.form-container{
-    margin-top: -430px;
-    width: 1000px;
+.contacts-container{
+    margin-top: -320px;
 }
-.form-container .left-col{
-    width: 40%;
-    vertical-align: bottom;
-    margin-bottom: 20px;
-}
-.form-container .right-col{
-    margin-top: 0px;
-    width: 54%;
-    margin-bottom: 20px;
-}
-.form-container h4{
-    font-size: 35px;
-    padding-bottom: 55px;
-    white-space: nowrap;
-    font-weight: 600;
-    width: 300px;
-    border-bottom: 1px solid black;
-}
-.form-container .right-col form input{
-    display: block;
-    border: none;
-    border-bottom: 1px solid black;
-    width: 300px;
-    background-color: transparent;
-    margin-top: 35px;
-    outline: none;
-}
-.form-container .right-col form label{
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    display: block;
-}
-.form-container .right-col-wrapper{
-    padding: 50px 120px 0px 120px;
-    margin-left: 0px;
-}
-.form-container .right-col form input[type=submit]{
-    font-size: 16px;
-    text-align: left;
-    font-family: inherit;
-    border: none;
-}
-.form-container .right-col form textarea{
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid black;
-    width: 300px;
-    height: 100px;
-    font-family: inherit;
-    margin-top: 10px;
-}
-.form-container .right-col form textarea:focus{
-    outline: none;
-}
-.form-container ::placeholder{
-    font-family: inherit;
-    font-size: 16px;
-}
-.form-container .left-col-wrapper{
-    text-align: right;
-    padding-top: 320px;
-}
-.form-container .left-col-wrapper p{
-    margin-top: 30px;
-    line-height: 25px;
-}
-.form-container .left-col-wrapper i{
-    margin-bottom: 10px;
-    color: #F0BE43;
-    display: block;
-    font-size: 18px;
-}
-.form-container .social-logos i{
-    color: #515151;
-    font-size: 17px;
+.contact-left-col{
+    width: calc(50% - 100px);
+    padding-right: 100px;
+    display: inline-block;
+    position: relative;
 }
 
+.bottom-right-container{
+    position: relative;
+    bottom: 0px;
+    right: 50px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.bottom-right-container i{
+    position: absolute;
+    right: -50px;
+}
+.home{
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.phone{
+    margin-bottom: 50px;
+}
+.contact-right-col{
+    width: 49%;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 20px;
+    color: #515151;
+}
+.contact-form h4{
+    font-size: 45px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+.contact-form input,textarea:focus{
+    outline: none;
+}
+.contact-form input,textarea{
+    background-color: transparent;
+    display: block;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.contact-form textarea{
+    height: 65px;
+}
+.contact-form input[type="submit"]{
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    text-align: left;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover{
+    color: #f33176;
+    transition: all .3s ease-in-out;
+}
+.contact-form input{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    color: #515151;
+}
+
+.contact-logos{
+    margin-top: 100px;
+}
+
+.contact-logos i{
+    margin-right: 20px;
+    color: #515151;
+}
 /*PAGINA RISULTATI RICERCA*/
 
 .search-result .header-box{
