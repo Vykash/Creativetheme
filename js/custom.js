@@ -43,17 +43,25 @@ $(function(){
     
     
     /*background items*/
-    
-    jQuery('.item').each(function(ind){
-        var imgH = jQuery(this).
-        children('.pics-wrapper').children().height();
-        var imgW = jQuery(this).children('.pics-wrapper').children().width();
-        var imgsrc = jQuery(this).children('.pics-wrapper').children().attr('src');
+    function resizeGridItems(){
+        jQuery('.item').each(function(ind){
+            var imgH = jQuery(this).
+            children('.pics-wrapper').children().height();
+            var imgW = jQuery(this).children('.pics-wrapper').children().width();
+            var imgsrc = jQuery(this).children('.pics-wrapper').children().attr('src');
 
-        
-        jQuery(this).children('.pics-wrapper').append('<div class="item-bg"></div>');
-        
-        jQuery(this).find('.item-bg').css('height', imgH).css('width', imgW).css('background-image', 'url('+imgsrc+')');
-        
+            if(jQuery(this).find('.item-bg').lenght == undefined){
+                jQuery(this).children('.pics-wrapper').append('<div class="item-bg"></div>');
+            }
+
+            jQuery(this).find('.item-bg').css('height', imgH).css('width', imgW).css('background-image', 'url('+imgsrc+')'); 
+            console.log('ok');
+        });
+    }
+    resizeGridItems();
+    jQuery(window).on('resize',function(){
+        resizeGridItems();
     });
+    
+    
 });
