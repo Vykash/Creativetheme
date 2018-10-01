@@ -40,10 +40,13 @@ $(function(){
         resizeSvg('.contact-triangle', 2);
     });
     
+    
+    
     /*background items*/
     
     jQuery('.item').each(function(ind){
-        var imgH = jQuery(this).children('.pics-wrapper').children().height();
+        var imgH = jQuery(this).
+        children('.pics-wrapper').children().height();
         var imgW = jQuery(this).children('.pics-wrapper').children().width();
         var imgsrc = jQuery(this).children('.pics-wrapper').children().attr('src');
 
